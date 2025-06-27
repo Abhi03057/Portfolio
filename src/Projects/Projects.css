@@ -1,5 +1,3 @@
-/* Projects.css */
-
 #projects .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -37,29 +35,27 @@
 
 #projects .project-image {
   width: 100%;
-  max-height: 160px;
-  object-fit: cover;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
   border-radius: 8px;
   margin-bottom: 0.8rem;
+  background-color: #0e0e1a;
   box-shadow:
     0 0 10px rgba(0, 255, 255, 0.15),
     0 0 20px rgba(255, 0, 255, 0.1);
 }
 
-#projects .project-title a {
-  color: #00ffff;
+#projects .project-title {
   font-weight: 700;
   font-size: 1.1rem;
   font-family: 'Orbitron', monospace;
-  text-decoration: none;
   background: linear-gradient(45deg, #00ffff, #ff00ff);
+  background-size: 300% 300%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientShift 6s ease infinite;
-}
-
-#projects .project-title a:hover {
-  text-decoration: underline;
 }
 
 #projects .project-description {
@@ -84,7 +80,27 @@
     0 0 10px rgba(255, 0, 255, 0.05);
 }
 
-/* Responsive Adjustments */
+.project-link {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  text-align: right;
+  width: 100%;
+}
+
+.project-link a {
+  color: #00ffff;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+  transition: color 0.2s ease;
+}
+
+.project-link a:hover {
+  color: #ff00ff;
+  text-decoration: underline;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   #projects .project-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -94,7 +110,7 @@
     font-size: 0.85rem;
   }
 
-  #projects .project-title a {
+  #projects .project-title {
     font-size: 1rem;
   }
 }

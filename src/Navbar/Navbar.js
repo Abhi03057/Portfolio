@@ -2,7 +2,7 @@
 import React from 'react';
 import './Navbar.css';
 
-const Navbar = ({ activeSection, scrollToSection, hacker, setHacker }) => {
+const Navbar = ({ activeSection, scrollToSection }) => {
   const NAV_ITEMS = [
     { id: 'about', label: 'About' },
     { id: 'projects', label: 'Projects' },
@@ -35,14 +35,6 @@ const Navbar = ({ activeSection, scrollToSection, hacker, setHacker }) => {
         >
           Download Resume
         </a>
-        <button
-          className="resume-btn"
-          style={{ marginLeft: '0.5rem' }}
-          onClick={() => setHacker((h) => !h)}
-          aria-label="Toggle cyberpunk/hacker theme"
-        >
-          {hacker ? 'Cyberpunk' : 'Hacker'} Mode
-        </button>
       </div>
     </nav>
   );

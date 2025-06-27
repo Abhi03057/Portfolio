@@ -1,5 +1,6 @@
 /* Enhanced Creative Navbar Styles */
 .navbar {
+  margin-bottom: 4.5rem;
   position: sticky;
   top: 0;
   width: 100%;
@@ -266,14 +267,13 @@
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
 }
-
 .resume-btn {
   background: linear-gradient(135deg, 
     rgba(255, 0, 255, 0.1) 0%,
     rgba(0, 255, 255, 0.1) 100%);
   border: 2px solid transparent;
   background-clip: padding-box;
-  color: #ff00ff;
+  color: #00ffff; /* Updated from #ff00ff */
   font-family: 'Orbitron', 'Courier New', monospace;
   font-size: 0.75rem;
   font-weight: 600;
@@ -285,12 +285,14 @@
   overflow: hidden;
   text-decoration: none;
   display: inline-block;
-  text-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Updated from pink glow */
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   backdrop-filter: blur(15px);
   transform-style: preserve-3d;
   white-space: nowrap;
 }
+
+
 
 .resume-btn::before {
   content: '';
@@ -325,9 +327,9 @@
 
 .resume-btn:hover {
   transform: translateY(-3px) scale(1.05);
-  color: #00ffff;
+  color: #ffffff; /* Optional brighter hover */
   text-shadow: 
-    0 0 15px #00ffff,
+    0 0 15px #ffffff,
     0 0 30px #00ffff,
     0 0 45px #00ffff;
   box-shadow: 
