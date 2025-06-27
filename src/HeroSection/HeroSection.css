@@ -1,0 +1,74 @@
+.section {
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  border-left: 3px solid var(--accent-cyan);
+  border-radius: 0.7rem;
+  background: linear-gradient(120deg, #0a0a0f 80%, #111118 100%);
+  box-shadow: 0 0 24px 0 #00ffff22, 0 0 32px 0 #ff00ff11;
+  position: relative;
+  overflow: hidden;
+  animation: slideIn 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(60px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.section-heading {
+  font-size: 1.2rem;
+  font-family: var(--brand-font);
+  color: var(--accent-cyan);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: pre;
+  text-shadow: 0 0 8px #00ffff, 0 0 16px #ff00ff;
+  border-bottom: 2px solid var(--accent-magenta);
+  padding-bottom: 0.5rem;
+  animation: type 1.2s steps(30, end) 1, flickerIn 1.2s;
+  overflow: hidden;
+}
+
+@keyframes type {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.blink {
+  color: var(--accent-magenta);
+  animation: blink 1s steps(1) infinite;
+}
+
+.typed-line {
+  display: block;
+  width: fit-content;
+  white-space: pre;
+  animation: type 1.2s steps(30, end) 1, flickerIn 1.2s;
+  overflow: hidden;
+  color: var(--text-main);
+  text-shadow: 0 0 8px #00ffff, 0 0 16px #ff00ff;
+}
+
+@keyframes flickerIn {
+  0% { opacity: 0; }
+  10% { opacity: 0.5; }
+  20% { opacity: 1; }
+  22% { opacity: 0.7; }
+  24% { opacity: 1; }
+  28% { opacity: 0.8; }
+  32% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+.section {
+  border-image: linear-gradient(90deg, #00ffff, #ff00ff 60%, #3b82f6 100%) 1;
+}
