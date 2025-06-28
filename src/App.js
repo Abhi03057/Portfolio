@@ -12,7 +12,6 @@ import Contact from './Contact/Contact';
 function App() {
   const sectionRefs = useRef({});
   const [activeSection, setActiveSection] = useState('home');
-  const [hacker, setHacker] = useState(false);
 
   const scrollToSection = (id) => {
     const section = sectionRefs.current[id];
@@ -43,12 +42,10 @@ function App() {
   }, []);
 
   return (
-    <div className={`App ${hacker ? 'hacker-mode' : ''}`}>
+    <div className="App">
       <Navbar
         activeSection={activeSection}
         scrollToSection={scrollToSection}
-        hacker={hacker}
-        setHacker={setHacker}
       />
 
       <HeroSection sectionRefs={sectionRefs} />

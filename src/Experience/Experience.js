@@ -13,9 +13,14 @@ function Experience() {
     >
       <div className="section-heading">&gt; experience.exe <span className="blink">_</span></div>
       <div className="typed-line">Web Dev Intern @ RCOTBA Industries (Jan 2025 – Present)</div>
-      <div className="typed-line">- Building fully functional websites for clients using React.JS</div>
-      <div className="typed-line">Contributor @ React Open Source (2022 – Present)</div>
-      <div className="typed-line">- Contributed to documentation and bug fixes for React core and ecosystem libraries</div>
+      <div className="typed-line">
+        <ul>
+          <li>Building fully functional websites for clients alongside a collaborative team.</li>
+          <li>Utilized React.JS to deliver responsive, high-quality web solutions.</li>
+        </ul>
+      </div>
+
+      
     </section>
   );
 }
