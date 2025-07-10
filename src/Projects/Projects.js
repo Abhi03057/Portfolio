@@ -8,6 +8,7 @@ import hrms from '../images/hrms.png';
 import brogrammer from '../images/brogrammer.png';
 import brotify from '../images/brotify.png';
 import novanews from '../images/nova-news.png';
+import finley from '../images/finley.png';
 
 const projects = [
   {
@@ -66,6 +67,15 @@ const projects = [
     img: novanews,
     link: 'https://github.com/Abhi03057/nova-news',
   },
+  {
+  id: 'finley',
+  title: 'Finley',
+  description: 'A crypto finance dashboard built with React that shows real-time token data using the CoinGecko API, includes authentication via Firebase, and features a news section delivering live crypto news updates.',
+  tech: 'React, Firebase, CoinGecko API, News API',
+  img: finley,
+  link: 'https://github.com/Abhi03057/finley',
+},
+
 ];
 
 function Projects() {
