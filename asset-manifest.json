@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.b399b633.css",
-    "main.js": "/Portfolio/static/js/main.cea7fa89.js",
+    "main.js": "/Portfolio/static/js/main.112da273.js",
     "static/js/453.438d9e50.chunk.js": "/Portfolio/static/js/453.438d9e50.chunk.js",
     "static/media/spacewatch.png": "/Portfolio/static/media/spacewatch.8b82b5100b3e42b6cc94.png",
     "static/media/image-processor.png": "/Portfolio/static/media/image-processor.79ae96c2d8e3df42eb7d.png",
     "static/media/brotify.png": "/Portfolio/static/media/brotify.a8122f1461d23c7b38a6.png",
     "static/media/hrms.png": "/Portfolio/static/media/hrms.a3ba75e5df76294149aa.png",
     "static/media/nova-news.png": "/Portfolio/static/media/nova-news.e6a7940de2974e799d68.png",
+    "static/media/finley.png": "/Portfolio/static/media/finley.386ad8d0b2317593a620.png",
     "static/media/Merakli.png": "/Portfolio/static/media/Merakli.8220380f3805c2bc3648.png",
     "static/media/brogrammer.png": "/Portfolio/static/media/brogrammer.c8f3cc8c904205c4af2f.png",
     "static/media/profile.jpg": "/Portfolio/static/media/profile.780248e6ec7cffb93875.jpg",
     "index.html": "/Portfolio/index.html",
     "main.b399b633.css.map": "/Portfolio/static/css/main.b399b633.css.map",
-    "main.cea7fa89.js.map": "/Portfolio/static/js/main.cea7fa89.js.map",
+    "main.112da273.js.map": "/Portfolio/static/js/main.112da273.js.map",
     "453.438d9e50.chunk.js.map": "/Portfolio/static/js/453.438d9e50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b399b633.css",
-    "static/js/main.cea7fa89.js"
+    "static/js/main.112da273.js"
   ]
 }
