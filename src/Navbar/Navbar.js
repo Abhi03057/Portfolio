@@ -28,7 +28,7 @@ const Navbar = ({ activeSection, scrollToSection }) => {
         ))}
         <a
           className="resume-btn"
-          href="https://drive.google.com/uc?export=download&id=19p9yp0Sirbl_aNUOHqjkHRABzuKk2jIr"
+          href="https://drive.google.com/uc?export=download&id=1TL9caVbcALzL_X3X_CZxxk6h-r-Ap1Mb"
           download
           target="_blank"
           rel="noopener noreferrer"
