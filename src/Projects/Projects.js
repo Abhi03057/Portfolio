@@ -12,6 +12,15 @@ import finley from '../images/finley.png';
 
 const projects = [
   {
+    id: 'finley',
+    title: 'Finley',
+    description: 'A crypto finance dashboard built with React that shows real-time token data using the CoinGecko API, includes authentication via Firebase, and features a news section delivering live crypto news updates.',
+    tech: 'React, Firebase, CoinGecko API, News API',
+    img: finley,
+    link: 'https://github.com/Abhi03057/finley',
+  },
+
+  {
     id: 'merakli',
     title: 'Merakli',
     description: 'An eCommerce React app with Firebase, offering category-wise product listings, dynamic cart, and auth.',
@@ -67,15 +76,7 @@ const projects = [
     img: novanews,
     link: 'https://github.com/Abhi03057/nova-news',
   },
-  {
-  id: 'finley',
-  title: 'Finley',
-  description: 'A crypto finance dashboard built with React that shows real-time token data using the CoinGecko API, includes authentication via Firebase, and features a news section delivering live crypto news updates.',
-  tech: 'React, Firebase, CoinGecko API, News API',
-  img: finley,
-  link: 'https://github.com/Abhi03057/finley',
-},
-
+  
 ];
 
 function Projects() {
@@ -84,23 +85,23 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="section"
+      className="projects-section"
       ref={(el) => (sectionRefs.current['projects'] = el)}
     >
-      <div className="section-heading">
-        $ run projects <span className="blink">_</span>
+      <div className="projects-heading">
+        $ run projects <span className="projects-blink">_</span>
       </div>
 
-      <div className="project-grid">
+      <div className="projects-grid">
         {projects.map((project) => (
-          <div className="project-card" key={project.id}>
-            <img src={project.img} alt={project.title} className="project-image" />
-            <h3 className="project-title">{project.title}</h3>
-            <p className="project-description">{project.description}</p>
-            <span className="tech-stack">{project.tech}</span>
-            <div className="project-link">
+          <div className="project-item" key={project.id}>
+            <img src={project.img} alt={project.title} className="project-thumbnail" />
+            <h3 className="project-name">{project.title}</h3>
+            <p className="project-info">{project.description}</p>
+            <span className="project-tech">{project.tech}</span>
+            <div className="project-action">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                To project →
+                View Project →
               </a>
             </div>
           </div>

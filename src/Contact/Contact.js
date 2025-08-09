@@ -4,57 +4,72 @@ import './Contact.css';
 function Contact() {
   const sectionRefs = useRef({});
 
+  const contactLinks = [
+    {
+      id: 'instagram',
+      icon: 'fa-brands fa-instagram',
+      label: '@ab_pan07',
+      url: 'https://www.instagram.com/ab_pan07/'
+    },
+    {
+      id: 'linkedin',
+      icon: 'fa-brands fa-linkedin',
+      label: 'abhyuday-panwar',
+      url: 'https://www.linkedin.com/in/abhyuday-panwar-9579b2289/'
+    },
+    {
+      id: 'github',
+      icon: 'fa-brands fa-github',
+      label: 'Abhi03057',
+      url: 'https://github.com/Abhi03057'
+    },
+    {
+      id: 'email',
+      icon: 'fa-solid fa-envelope',
+      label: 'abhyudaypanwar@gmail.com',
+      url: 'mailto:abhyudaypanwar@gmail.com'
+    }
+  ];
+
   return (
     <>
       <section
-        id="contact-section"
-        className="contact-section"
+        id="contact-wrapper"
+        className="contact-wrapper"
         ref={(el) => (sectionRefs.current['contact'] = el)}
       >
-        <div className="contact-heading">&gt; contact.exe <span className="blink">_</span></div>
+        <div className="contact-title">
+          &gt; contact.exe <span className="terminal-cursor">_</span>
+        </div>
 
-        <div className="contact-card">
-          <div className="contact-item">
-            <i className="fa-brands fa-instagram"></i>
-            <a href="https://www.instagram.com/ab_pan07/" target="_blank" rel="noopener noreferrer">
-              @ab_pan07
-            </a>
-          </div>
-
-          <div className="contact-item">
-            <i className="fa-brands fa-linkedin"></i>
-            <a href="https://www.linkedin.com/in/abhyuday-panwar-9579b2289/" target="_blank" rel="noopener noreferrer">
-              abhyuday-panwar
-            </a>
-          </div>
-
-          <div className="contact-item">
-            <i className="fa-brands fa-github"></i>
-            <a href="https://github.com/Abhi03057" target="_blank" rel="noopener noreferrer">
-              Abhi03057
-            </a>
-          </div>
-
-          <div className="contact-item">
-            <i className="fa-solid fa-envelope"></i>
-            <a href="mailto:abhyudaypanwar@gmail.com">
-              abhyudaypanwar@gmail.com
-            </a>
-          </div>
+        <div className="contact-grid">
+          {contactLinks.map((contact, index) => (
+            <div 
+              key={contact.id} 
+              className="contact-card"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <i className={`${contact.icon} contact-icon`}></i>
+              <a 
+                href={contact.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="contact-link"
+              >
+                {contact.label}
+              </a>
+            </div>
+          ))}
         </div>
       </section>
 
       <button
-        className="scroll-to-top resume-btn"
+        className="back-to-top-btn"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         aria-label="Scroll to top"
       >
         ⬆️
       </button>
-
-      <canvas className="tech-grid-bg" id="tech-grid-canvas"></canvas>
-      <canvas className="particles-bg" id="particles-canvas"></canvas>
-      <canvas className="matrix-bg" id="matrix-canvas"></canvas>
     </>
   );
 }
