@@ -70,7 +70,7 @@ function HeroSection() {
       >
         <div className="section-heading">&gt; education.exe <span className="blink">_</span></div>
         <div className="typed-line">B.Tech in Computer Science & Engineering (AI & ML)</div>
-        <div className="typed-line">[SRM Institute Of Science and Technology], [3rd year]</div>
+        <div className="typed-line">SRM Institute Of Science and Technology, 3rd year</div>
       </section>
     </>
   );
